@@ -38,7 +38,7 @@ To get started with the Awesome Python Project, follow these steps:
 ## Usage
 
 
-<img src="./chat.gif"/>
+<img src="./qachat.gif"/>
 
 <!--
 ```python
