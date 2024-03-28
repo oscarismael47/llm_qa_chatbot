@@ -1,6 +1,6 @@
 import os,json
 import streamlit as st
-import llm_helper,ingest_helper
+import llm_helper,ingest_helper,pdf_helper
 from PyPDF2 import PdfReader
 
 #Simple Chat Bot using Streamlit and OpenAI's LLM.
@@ -84,7 +84,17 @@ elif section == "Chat":
 elif section == "Document viewer":
     st.title("Document viewer")
 
+    ## load files
+    with open("state.json") as file:
+        state = json.load(file)
+        files = state["files"]
 
+    document = st.sidebar.radio("Documents:",files)
+    checkboxes = {}
+    for file in files:
+        if document == file:
+            pdf_helper.show_pdf(file)
+    
 
 
         

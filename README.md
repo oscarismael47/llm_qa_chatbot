@@ -36,9 +36,17 @@ To get started with the Awesome Python Project, follow these steps:
 -->
 
 ## Usage
+### Add document to Vector database
+Here, upload, and read pdf content, then we divide the content into small text called chunks, next we get an embedding for each chunk, and finally we store the text and embedding together in the Vector database.  
+<img src="./qachat_add_document.gif"/>
 
+### Chat
+The chatbot can answer questions based on the pdf selected
+<img src="./qachat_chat.gif"/>
 
-<img src="./qachat.gif"/>
+### Document viewer
+Here, we show the pdf content
+<img src="./qachat_pdf_viewer.gif"/>
 
 <!--
 ```python
