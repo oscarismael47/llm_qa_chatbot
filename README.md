@@ -2,6 +2,8 @@
 
 In this project, users have the capability to augment the vector database with new documents, which in turn fuels the generation of contextual information. This contextual information serves as the backbone for the Question-Answering (QA) ChatBot. Utilizing this context, the ChatBot adeptly responds to inquiries pertaining to the stored documents. It's important to note that the Language Model (LM) employed here exclusively relies on the provided context for its responses. The implementation seamlessly integrates Langchain, OpenAI, and Streamlit libraries, streamlining the functionality of the system.
 
+Demo Link: https://appchatbot-llm.streamlit.app/
+
 ## Table of Contents
 
 1. [Installation](#installation)
