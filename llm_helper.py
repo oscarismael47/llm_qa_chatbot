@@ -66,7 +66,7 @@ def ask_over_files(question,files):
     filter=f'namespace  in {files}'
     db_response = pymilvus_db_helper.search(question_embedding,output_fields,filter,COLLECTION_NAME)
     titles,texts = db_response[0],db_response[1]
-    context = ".".join(texts)
+    context = "You are AI assistant. Your role is to answer based on the context(selected documents).Be friendly ".join(texts)
     template = """Answer the following question by using only the context.
                 question:{QUESTION}
                 context:{CONTEXT}
