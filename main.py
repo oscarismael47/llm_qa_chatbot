@@ -1,7 +1,6 @@
 import os,json
 import streamlit as st
 import llm_helper,ingest_helper,pdf_helper
-from PyPDF2 import PdfReader
 
 #Simple Chat Bot using Streamlit and OpenAI's LLM.
 #This application allows users to interact with a chatbot powered by OpenAI's Language Model.
